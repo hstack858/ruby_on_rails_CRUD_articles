@@ -7,7 +7,7 @@
           <div class="container">
             <div class="card text-center shadow p-3 mb-5 bg-white rounded">
               <div class="card-header font-italic">
-                by Henry Stachowiak
+                by <%= @article.user.username %>
               </div>
               <div class="card-body">
                 <div class="card-text text-left"><%= simple_format(@article.description) %></div>
